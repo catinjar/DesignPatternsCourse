@@ -1,0 +1,7 @@
+D:\DesignPatters\Homework2\bin\Debug\Homework2.exe.config
+D:\DesignPatters\Homework2\bin\Debug\Homework2.exe
+D:\DesignPatters\Homework2\bin\Debug\Homework2.pdb
+D:\DesignPatters\Homework2\obj\Debug\Homework2.csprojAssemblyReference.cache
+D:\DesignPatters\Homework2\obj\Debug\Homework2.csproj.CoreCompileInputs.cache
+D:\DesignPatters\Homework2\obj\Debug\Homework2.exe
+D:\DesignPatters\Homework2\obj\Debug\Homework2.pdb
