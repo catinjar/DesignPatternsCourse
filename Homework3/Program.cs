@@ -39,19 +39,7 @@ namespace Homework3 {
             return this;
         }
 
-        public EmailLetter Result {
-            get {
-                if (letter.Receivers.Count == 0) {
-                    throw new FormatException("The letter must have at least one receiver!");
-                }
-
-                if (string.IsNullOrEmpty(letter.Body)) {
-                    throw new FormatException("The letter must have a body!");
-                }
-
-                return letter;
-            }
-        }
+        public EmailLetter Result => letter;
     }
 
     class Program {
