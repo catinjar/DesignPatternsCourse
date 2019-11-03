@@ -17,29 +17,27 @@ namespace Homework3 {
     }
 
     public class EmailBuilder {
-        private EmailLetter letter = new EmailLetter();
-
         public EmailBuilder(string receiver, string body) {
-            letter.Receivers.Add(receiver);
-            letter.Body = body;
+            Result.Receivers.Add(receiver);
+            Result.Body = body;
         }
 
         public EmailBuilder AddReceiver(string receiver) {
-            letter.Receivers.Add(receiver);
+            Result.Receivers.Add(receiver);
             return this;
         }
 
         public EmailBuilder SetBody(string body) {
-            letter.Body = body;
+            Result.Body = body;
             return this;
         }
 
         public EmailBuilder SetTheme(string theme) {
-            letter.Theme = theme;
+            Result.Theme = theme;
             return this;
         }
 
-        public EmailLetter Result => letter;
+        public EmailLetter Result { get; } = new EmailLetter();
     }
 
     class Program {
