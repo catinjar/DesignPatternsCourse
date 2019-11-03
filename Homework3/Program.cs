@@ -19,6 +19,11 @@ namespace Homework3 {
     public class EmailBuilder {
         private EmailLetter letter = new EmailLetter();
 
+        public EmailBuilder(string receiver, string body) {
+            letter.Receivers.Add(receiver);
+            letter.Body = body;
+        }
+
         public EmailBuilder AddReceiver(string receiver) {
             letter.Receivers.Add(receiver);
             return this;
@@ -51,12 +56,10 @@ namespace Homework3 {
 
     class Program {
         private static void Main(string[] args) {
-            var emailBuilder = new EmailBuilder();
+            var emailBuilder = new EmailBuilder("someone@gmail.com", "Hello!");
 
             var letter = emailBuilder
-                .AddReceiver("someone@gmail.com")
                 .AddReceiver("anotherone@gmail.com")
-                .SetBody("Hello!")
                 .SetTheme("This is a test")
                 .Result;
 
