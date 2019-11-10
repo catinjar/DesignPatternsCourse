@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5A1D23E4-5781-4D80-A743-2EB84E2F60D3}</ProjectGuid>
+    <ProjectGuid>{0E2FB939-F652-433F-A530-78BBC563F669}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Homework4</RootNamespace>
-    <AssemblyName>Homework4</AssemblyName>
+    <RootNamespace>Homework5</RootNamespace>
+    <AssemblyName>Homework5</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,13 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Homework\Clients\IOrmAdapter.cs" />
-    <Compile Include="Homework\Clients\UserClient.cs" />
-    <Compile Include="Homework\FirstOrmLibrary\IFirstOrm.cs" />
-    <Compile Include="Homework\Models\DbUserEntity.cs" />
-    <Compile Include="Homework\Models\DbUserInfoEntity.cs" />
-    <Compile Include="Homework\Models\Interfaces\IDbEntity.cs" />
-    <Compile Include="Homework\SecondOrmLibrary\ISecondOrm.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
