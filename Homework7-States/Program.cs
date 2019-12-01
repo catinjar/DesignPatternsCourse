@@ -121,7 +121,7 @@ namespace Homework7_States
     {
         public override void Pay(PrinterContext context)
         {
-            Console.WriteLine($"Payed money {context.State}");
+            Console.WriteLine($"Payed the money {context.State}");
             context.State = new ChooseDeviceState();
         }
     }
@@ -190,32 +190,32 @@ namespace Homework7_States
     {
         public override void Start(PrinterContext context)
         {
-            throw new Exception("Interation is stopped");
+            throw new Exception("Interaction is stopped");
         }
 
         public override void Pay(PrinterContext context)
         {
-            throw new Exception("Interation is stopped");
+            throw new Exception("Interaction is stopped");
         }
 
         public override void ChooseDevice(PrinterContext context)
         {
-            throw new Exception("Interation is stopped");
+            throw new Exception("Interaction is stopped");
         }
 
         public override void ChooseDocument(PrinterContext context)
         {
-            throw new Exception("Interation is stopped");
+            throw new Exception("Interaction is stopped");
         }
 
         public override void PrintDocument(PrinterContext context)
         {
-            throw new Exception("Interation is stopped");
+            throw new Exception("Interaction is stopped");
         }
 
         public override void GetCash(PrinterContext context)
         {
-            throw new Exception("Interation is stopped");
+            throw new Exception("Interaction is stopped");
         }
     }
 
