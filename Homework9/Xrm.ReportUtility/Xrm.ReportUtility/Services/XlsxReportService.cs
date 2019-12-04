@@ -2,6 +2,7 @@
 
 namespace Xrm.ReportUtility.Services
 {
+    // Конкретный Adapter; см. IReportService
     public class XlsxReportService : ReportServiceBase
     {
         public XlsxReportService(string[] args) : base(args) { }

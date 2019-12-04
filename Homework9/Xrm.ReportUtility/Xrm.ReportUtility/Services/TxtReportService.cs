@@ -6,6 +6,7 @@ using Xrm.ReportUtility.Models;
 
 namespace Xrm.ReportUtility.Services
 {
+    // Конкретный Adapter; см. IReportService
     public class TxtReportService : ReportServiceBase
     {
         public TxtReportService(string[] args) : base(args){ }
@@ -21,13 +22,13 @@ namespace Xrm.ReportUtility.Services
                 var items = Regex.Split(line, @"\s+");
 
                 result.Add(new DataRow
-                           {
-                               Name = items[0],
-                               Volume = decimal.Parse(items[1]),
-                               Weight = decimal.Parse(items[2]),
-                               Cost = decimal.Parse(items[3]),
-                               Count = decimal.Parse(items[4])
-                           });
+                 {
+                     Name   = items[0],
+                     Volume = decimal.Parse(items[1]),
+                     Weight = decimal.Parse(items[2]),
+                     Cost   = decimal.Parse(items[3]),
+                     Count  = decimal.Parse(items[4])
+                 });
             }
 
             return result.ToArray();

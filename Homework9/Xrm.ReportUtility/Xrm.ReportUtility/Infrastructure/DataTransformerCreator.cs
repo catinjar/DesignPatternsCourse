@@ -4,6 +4,7 @@ using Xrm.ReportUtility.Models;
 
 namespace Xrm.ReportUtility.Infrastructure
 {
+    // Фабрика для трансформеров, с её помощью реализовывается ChainOfResponsibility, то есть цепочка выполняемых преобразований
     public static class DataTransformerCreator
     {
         public static IDataTransformer CreateTransformer(ReportConfig config)

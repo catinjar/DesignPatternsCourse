@@ -6,6 +6,7 @@ using Xrm.ReportUtility.Models;
 
 namespace Xrm.ReportUtility.Services
 {
+    // Конкретный Adapter; см. IReportService
     public class CsvReportService : ReportServiceBase
     {
         public CsvReportService(string[] args) : base(args) { }

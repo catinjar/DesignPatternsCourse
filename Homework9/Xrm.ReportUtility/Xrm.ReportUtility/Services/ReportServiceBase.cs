@@ -6,6 +6,7 @@ using Xrm.ReportUtility.Models;
 
 namespace Xrm.ReportUtility.Services
 {
+    // Базовый класс для конкретных адаптеров; см. IReportService
     public abstract class ReportServiceBase : IReportService
     {
         private readonly string[] _args;
