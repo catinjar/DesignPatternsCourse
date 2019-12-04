@@ -48,12 +48,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Infrastructure\ReportPrinter.cs" />
+    <Compile Include="Infrastructure\ReportPrinterBuilder.cs" />
+    <Compile Include="Infrastructure\ReportPrinterDecoratorBase.cs" />
+    <Compile Include="Infrastructure\ReportServiceFactory.cs" />
     <Compile Include="Infrastructure\Transformers\Abstract\ReportServiceTransformerBase.cs" />
     <Compile Include="Infrastructure\Transformers\DataTransformer.cs" />
     <Compile Include="Infrastructure\Transformers\VolumeSumReportTransformer.cs" />
     <Compile Include="Infrastructure\Transformers\WeightSumReportTransfomer.cs" />
     <Compile Include="Infrastructure\Transformers\CostSumReportTransformer.cs" />
     <Compile Include="Infrastructure\Transformers\CountSumReportTransformer.cs" />
+    <Compile Include="Interfaces\IReportPrinter.cs" />
     <Compile Include="Interfaces\IReportService.cs" />
     <Compile Include="Models\ReportRow.cs" />
     <Compile Include="Services\CsvReportService.cs" />
